@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  <title>Filphy</title>
+</head>
+<body>
+  <header class="container d-flex flex-row align-items-center justify-content-between">
+    <h1>Filphy</h1>
+    <p>"LET'S GET FILPHY IN HERE"</p>
+  </header>
+
+  <section class="container">
+    <div class="input-group">
+      <input type="text" class="form-control search-input" placeholder="SEARCH A MOVIE TITLE" aria-label="Movie Title Search"
+        aria-describedby="basic-addon2">
+        <div class="input-group-append">
+        <button class="btn btn-secondary search-button" type="button">Search</button>
+      </div>
+    </div>
+    <p class="input-p">Search and save your favorite films and gifs at the same time.</p>
+  </section>
+
+  <div class="movie-modal hidden">
+    <h4>Saved Movies</h4>
+  </div>
+
+
+  <main>
+    <div class="container movie-info d-flex flex-row align-items-center justify-content-between border border-light">
+    <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quo fuga delectus quaerat soluta ipsum corporis voluptate, harum, blanditiis eveniet repudiandae neque quod, cum amet recusandae unde tempore accusantium quisquam!Quibusdam asperiores ab, consectetur sunt fugit nulla aperiam? Animi sequi est eaque quasi voluptates vitae cumque doloribus autem voluptatibus repudiandae, labore quisquam tenetur id quis delectus debitis possimus similique ratione!</p>
+    </div>
+    <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap border border-light">
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+      <div class="gif-box border border-secondary"></div>
+    </div>
+  </main>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="config.js"></script>
+  <script src="./components/app.js"></script>
+  <script src="./components/gifs.js"></script>
+  <script src="./components/movie-info.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
