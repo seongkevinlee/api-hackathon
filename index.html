@@ -15,17 +15,19 @@
 <body>
   <header class="container d-flex flex-row align-items-center justify-content-between">
     <h1>Filphy</h1>
-    <p>"LET'S GET FILPHY IN HERE"</p>
+    <p>LET'S GET FILPHY IN HERE</p>
   </header>
 
   <section class="container">
+  <form id="search-form">
     <div class="input-group">
-      <input type="text" class="form-control search-input" placeholder="SEARCH A MOVIE TITLE" aria-label="Movie Title Search"
+      <input type="text" class="form-control search-input" placeholder="SEARCH A FILM TITLE" aria-label="Movie Title Search"
         aria-describedby="basic-addon2">
         <div class="input-group-append">
-        <button class="btn btn-secondary search-button" type="button">Search</button>
+        <button class="btn btn-danger search-button" id="search-button" type="submit">Search</button>
+        </div>
       </div>
-    </div>
+    </form>
     <p class="input-p">Search and save your favorite films and gifs at the same time.</p>
   </section>
 
@@ -36,8 +38,13 @@
 
   <main>
     <div class="container movie-info d-flex flex-row align-items-center justify-content-between border border-light">
-    <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quo fuga delectus quaerat soluta ipsum corporis voluptate, harum, blanditiis eveniet repudiandae neque quod, cum amet recusandae unde tempore accusantium quisquam!Quibusdam asperiores ab, consectetur sunt fugit nulla aperiam? Animi sequi est eaque quasi voluptates vitae cumque doloribus autem voluptatibus repudiandae, labore quisquam tenetur id quis delectus debitis possimus similique ratione!</p>
-    </div>
+      <div class="movie-info-container">
+        <p class="info-text"></p>
+        </div>
+        <div class="poster-container">
+
+        </div>
+      </div>
     <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap border border-light">
       <div class="gif-box border border-secondary"></div>
       <div class="gif-box border border-secondary"></div>
