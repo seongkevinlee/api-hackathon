@@ -85,7 +85,62 @@ class MovieInfo {
   }
 
   saveMovie(movieInfo) {
-    $(".movie-modal").append(movieInfo);
+    // var movieModalText = $(".modal-info-text");
+    // console.log('movieInfoBody:', movieModalText);
+    // var movieModalPoster = $(".modal-poster-container");
+    var movieModalContainer = $(".movie-modal");
+
+    var movieModalBoxes = document.createElement("div");
+    movieModalBoxes.className = "movie-modal-info d-flex flex-row align-items-center justify-content-between";
+
+    var savedModalMovie = document.createElement("div");
+    savedModalMovie.className = "modal-info-text";
+
+    var savedModalPoster = document.createElement("div");
+    savedModalPoster.className = "modal-poster-container";
+
+    var titleText = document.createElement("p");
+    var yearText = document.createElement("p");
+    var ratedText = document.createElement("p");
+    var releasedText = document.createElement("p");
+    var runTimeText = document.createElement("p");
+    var actorsText = document.createElement("p");
+    var awardsText = document.createElement("p");
+    var directorText = document.createElement("p");
+    var plotText = document.createElement("p");
+    var imdbRatingText = document.createElement("p");
+
+    var posterImg = document.createElement("img");
+    posterImg.setAttribute("src", this.poster);
+    posterImg.className = "poster-img";
+
+    titleText.textContent = this.title;
+    yearText.textContent = this.year;
+    ratedText.textContent = this.rated;
+    releasedText.textContent = this.released;
+    runTimeText.textContent = this.runTime;
+    actorsText.textContent = this.actors;
+    awardsText.textContent = this.awards;
+    directorText.textContent = this.director;
+    plotText.textContent = this.plot;
+    imdbRatingText.textContent = this.imdbRating;
+
+    savedModalMovie.append(
+      titleText,
+      yearText,
+      ratedText,
+      releasedText,
+      runTimeText,
+      actorsText,
+      awardsText,
+      directorText,
+      plotText,
+      imdbRatingText,
+    );
+    savedModalPoster.append(posterImg);
+
+    movieModalBoxes.append(savedModalMovie, savedModalPoster);
+    movieModalContainer.append(movieModalBoxes);
   }
 
 }

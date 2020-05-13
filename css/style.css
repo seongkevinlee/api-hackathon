@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
   background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url("../images/cinemagraph_gif.gif");
@@ -5,25 +6,39 @@ body {
   background-position: center bottom;
   background-size: cover;
 }
-
 p {
   font-size: .5em;
   margin-bottom: 0;
 }
 
+/* HEADER */
 header > p {
   width: 52%;
   font-size: 1.2rem;
   font-family: 'Amatic SC', cursive;
   color: whitesmoke;
 }
-
 header > h1 {
   color: rgb(216, 0, 0);
   font-family: 'Pattaya', sans-serif;
   margin-left: 10px;
 }
 
+/* SEARCH SECTION */
+.input-p {
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: .5rem;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+}
+#search-button {
+  background-color: rgb(194, 0, 0);
+  font-family: 'Amatic SC', cursive;
+}
+
+/* MOVIE SECTION */
 .movie-info {
   height: 25%;
   padding-right: 15px;
@@ -33,66 +48,10 @@ header > h1 {
   overflow: scroll;
   z-index: 0;
 }
-
-.gif-container {
-  width: 100%;
-  height: 40%;
-  background-color: rgba(255, 255, 255, 0.562);
-  position: fixed;
-  overflow: scroll;
-  z-index: 0;
-  top: 47%;
+.info-text {
+  width: 72%;
+  height: 100%;
 }
-.gif-img {
-  width: 50%;
-  height: 95px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.input-p {
-  width: 100%;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-bottom: .5rem;
-  color: white;
-  font-family: 'Amatic SC', cursive;
-}
-
-#search-button {
-  background-color: rgb(194, 0, 0);
-  font-family: 'Amatic SC', cursive;
-}
-
-#save-movie-btn {
-  font-size: .7rem;
-  background-color: rgb(194, 0, 0);
-  font-family: 'Amatic SC', cursive;
-  width: 100%;
-}
-
-footer {
-  margin-top: 123%;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#saved-movies-btn {
-  width: 25%;
-  font-size: 1.2rem;
-  font-family: 'Amatic SC', cursive;
-  background-color: rgb(194, 0, 0);
-}
-#saved-gifs-btn {
-  width: 25%;
-  font-size: 1.2rem;
-  font-family: 'Amatic SC', cursive;
-  background-color: rgb(194, 0, 0);
-}
-
 .poster-img {
   width: 100%;
   height: 100%;
@@ -110,7 +69,53 @@ footer {
   align-items: flex-start;
   height: 100%;
 }
+#save-movie-btn {
+  font-size: .7rem;
+  background-color: rgb(194, 0, 0);
+  font-family: 'Amatic SC', cursive;
+  width: 100%;
+}
 
+/* GIF SECTION */
+.gif-container {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.562);
+  position: fixed;
+  overflow: scroll;
+  z-index: 0;
+  top: 47%;
+}
+.gif-img {
+  width: 50%;
+  height: 95px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 123%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#saved-movies-btn {
+  width: 25%;
+  font-size: 1.2rem;
+  font-family: 'Amatic SC', cursive;
+  background-color: rgb(194, 0, 0);
+}
+#saved-gifs-btn {
+  width: 25%;
+  font-size: 1.2rem;
+  font-family: 'Amatic SC', cursive;
+  background-color: rgb(194, 0, 0);
+}
+
+/* SAVED MOVIES MODAL */
 .movie-modal {
   position: fixed;
   display: flex;
@@ -119,13 +124,30 @@ footer {
   color: antiquewhite;
   width: 100%;
   height: 66%;
-  text-align: center;
   font-family: 'Amatic SC', cursive;
   z-index: 2;
+  overflow: scroll;
 }
 .movie-modal > h4 {
   font-size: 1rem;
 }
+.modal-info-text {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3%;
+ }
+.modal-poster-container {
+  width: 27%;
+  margin-right: 3%;
+}
+.movie-modal-info {
+  margin-bottom: 3%;
+}
+
+/* SAVED GIFS MODAL */
 .gif-modal {
   position: fixed;
   display: flex;
@@ -137,12 +159,15 @@ footer {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   z-index: 2;
+  overflow: scroll;
 }
 .gif-modal > h4 {
   font-size: 1rem;
   z-index: 2;
 }
 
+
+/* DISPLAY TOGGLES */
 .hidden {
   display: none;
 }
