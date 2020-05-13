@@ -84,8 +84,8 @@ class MovieInfo {
     posterContainer.append(posterImg);
   }
 
-  addMovie() {
-
+  saveMovie(movieInfo) {
+    $(".movie-modal").append(movieInfo);
   }
 
 }

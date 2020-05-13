@@ -29,11 +29,26 @@ header > h1 {
   padding-right: 15px;
   padding-left: 15px;
   background-color: rgba(255, 255, 255, 0.562);
+  position: fixed;
+  overflow: scroll;
+  z-index: 0;
 }
 
-.gif-box {
-  width: 25%;
-  height: 72px;
+.gif-container {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.562);
+  position: fixed;
+  overflow: scroll;
+  z-index: 0;
+  top: 47%;
+}
+.gif-img {
+  width: 50%;
+  height: 95px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input-p {
@@ -58,7 +73,7 @@ header > h1 {
 }
 
 footer {
-  margin-top: 30%;
+  margin-top: 123%;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -90,9 +105,10 @@ footer {
   justify-content: center;
 }
 .movie-info-container {
-  width: 71%;
+  width: 70%;
   display: flex;
   align-items: flex-start;
+  height: 100%;
 }
 
 .movie-modal {
@@ -105,6 +121,7 @@ footer {
   height: 66%;
   text-align: center;
   font-family: 'Amatic SC', cursive;
+  z-index: 2;
 }
 .movie-modal > h4 {
   font-size: 1rem;
@@ -119,11 +136,17 @@ footer {
   height: 66%;
   text-align: center;
   font-family: 'Amatic SC', cursive;
+  z-index: 2;
 }
 .gif-modal > h4 {
   font-size: 1rem;
+  z-index: 2;
 }
 
 .hidden {
   display: none;
+}
+
+.invisible {
+  visibility: hidden;
 }

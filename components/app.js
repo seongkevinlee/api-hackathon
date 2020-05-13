@@ -15,6 +15,8 @@ class App {
   this.createSaveMovieBtn = this.createSaveMovieBtn.bind(this);
   this.removeMovieSaveBtn = this.removeMovieSaveBtn.bind(this);
   this.handleSaveMovieClick = this.handleSaveMovieClick.bind(this);
+  this.movieInfoToggle = this.movieInfoToggle.bind(this);
+  this.gifInfoToggle = this.gifInfoToggle.bind(this);
   }
 
 
@@ -41,10 +43,12 @@ class App {
     })
   }
   handleMovieSearchSuccess(data) {
+    searchedNumber++;
     console.log('Data', data);
     this.searchGiphy(data.Title);
     this.movieInfo.searchedMovie(data);
     this.createSaveMovieBtn();
+    this.movieInfoToggle();
   }
   handleMovieSearchError(err) {
     console.error(err);
@@ -64,6 +68,7 @@ class App {
     console.log('gif data:', data);
     console.log(this.gifCreator);
     this.gifInfo.searchedGif(data);
+    this.gifInfoToggle();
   }
   handleGifSearchError(err) {
     console.error(err);
@@ -74,13 +79,15 @@ class App {
     saveMovieBtn.className = "btn btn-danger";
     saveMovieBtn.setAttribute("id", "save-movie-btn");
     saveMovieBtn.textContent = "SAVE";
-    saveMovieBtn.addEventListener("click", this.handleSaveMovieClick());
+    saveMovieBtn.addEventListener("click", this.handleSaveMovieClick);
     $(".poster-container").append(saveMovieBtn);
 
   }
 
   handleSaveMovieClick() {
-
+    console.log('saveMovieClick this.movieInfo:', this.movieInfo);
+    this.savedMovies.push(this.movieInfo.data);
+    this.movieInfo.saveMovie(this.savedMovies);
   }
 
   removeMovieSaveBtn() {
@@ -89,6 +96,20 @@ class App {
       $(".movie-info").remove(saveMovieBtn);
     } else {
       console.log(saveMovieBtn);
+    }
+  }
+
+  movieInfoToggle() {
+    var movieInfoContainer = $(".movie-info")
+    if (searchedNumber === 1) {
+      movieInfoContainer.removeClass("invisible");
+    }
+  }
+
+  gifInfoToggle() {
+    var gifInfoContainer = $(".gif-container")
+    if (searchedNumber === 1) {
+      gifInfoContainer.removeClass("invisible");
     }
   }
 }
