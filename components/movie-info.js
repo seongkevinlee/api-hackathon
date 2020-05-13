@@ -15,8 +15,11 @@ class MovieInfo {
   }
 
   searchedMovie(movie) {
-
     console.log('movieInfo:', movie);
+    // var movieInfoBody = $(".info-text");
+    // movieInfoBody.detach();
+    // var moviePosterBody = $(".poster-container");
+    // moviePosterBody.detach();
     this.title = "Title: " + movie.Title;
     this.year = "Year: " + movie.Year;
     this.rated = "Rated: " + movie.Rated;
@@ -33,10 +36,11 @@ class MovieInfo {
 
   renderMovie(data) {
     this.data = data;
-    var movieInfoBody = this.movieInfo.querySelector(".info-text");
-    console.log('movieInfoBody:', movieInfoBody);
-    movieInfoBody.textContent = "";
+    var movieInfoBody = $(".info-text");
     var posterContainer = $(".poster-container");
+    console.log('movieInfoBody:', movieInfoBody);
+    movieInfoBody.empty();
+    posterContainer.empty();
 
     var titleText = document.createElement("p");
     var yearText = document.createElement("p");
@@ -78,6 +82,10 @@ class MovieInfo {
       )
 
     posterContainer.append(posterImg);
+  }
+
+  addMovie() {
+
   }
 
 }
