@@ -1,10 +1,12 @@
-var savedMovies = [];
 
 class App {
-  constructor(searchValue) {
-  this.searchValue = searchValue;
-  this.movieInfo = null;
+  constructor(movieInfo) {
+  this.savedMovies = [];
+  this.movieInfo = movieInfo;
   this.gifInfo = null;
+  this.searchForm = $('#search-form');
+  this.searchInput = $(".search-input");
+  this.applyEventHandlers = this.applyEventHandlers.bind(this);
   this.handleMovieSearchSuccess = this.handleMovieSearchSuccess.bind(this);
   this.handleMovieSearchError = this.handleMovieSearchError.bind(this);
   this.handleGifSearchSuccess = this.handleGifSearchSuccess.bind(this);
@@ -13,13 +15,22 @@ class App {
   this.removeMovieSaveBtn = this.removeMovieSaveBtn.bind(this);
   }
 
-  search() {
+
+  //
+  start() {
     console.log('search');
+    this.applyEventHandlers();
+  }
+
+  applyEventHandlers() {
+    this.searchForm.on("submit", () => {
+      event.preventDefault();
+      this.searchMovie(this.searchInput.val());
+    });
   }
 
   searchMovie(movieTitle) {
-    console.log(movieTitle);
-    // this.removeMovieSaveBtn();
+    this.removeMovieSaveBtn();
     $.ajax({
       method: "GET",
       url: "http://www.omdbapi.com/?apikey=" + omdbKey + "&t=" + movieTitle,
@@ -30,6 +41,7 @@ class App {
   handleMovieSearchSuccess(data) {
     console.log('Data', data);
     this.searchGiphy(data.Title);
+    this.movieInfo.searchedMovie(data);
     this.createSaveMovieBtn();
   }
   handleMovieSearchError(err) {
@@ -55,17 +67,17 @@ class App {
 
   createSaveMovieBtn() {
     var saveMovieBtn = document.createElement("button");
-    saveMovieBtn.className = "btn btn-success";
+    saveMovieBtn.className = "btn btn-danger";
     saveMovieBtn.setAttribute("id", "save-movie-btn");
     saveMovieBtn.textContent = "SAVE";
-    document.querySelector(".movie-info").append(saveMovieBtn);
+    $(".poster-container").append(saveMovieBtn);
 
   }
 
   removeMovieSaveBtn() {
-    var saveMovieBtn = document.getElementById("save-movie-btn");
+    var saveMovieBtn = $("#save-movie-btn");
     if(saveMovieBtn) {
-      document.querySelector(".movie-info").remove(saveMovieBtn);
+      $(".movie-info").remove(saveMovieBtn);
     } else {
       console.log(saveMovieBtn);
     }
