@@ -5,18 +5,18 @@ var gifEl = $(".gif-container");
 var gifs = new GifCreator(gifEl);
 
 $("#saved-movies-btn").on("click", function() {
-  if ($(".movie-modal").hasClass("hidden")) {
-    $(".movie-modal").removeClass("hidden");
+  if ($(".movie-modal").hasClass("invisible")) {
+    $(".movie-modal").removeClass("invisible");
   } else {
-    $(".movie-modal").addClass("hidden");
+    $(".movie-modal").addClass("invisible");
   }
 });
 
 $("#saved-gifs-btn").on("click", function() {
-  if ($(".gif-modal").hasClass("hidden")) {
-    $(".gif-modal").removeClass("hidden");
+  if ($(".gif-modal").hasClass("invisible")) {
+    $(".gif-modal").removeClass("invisible");
   } else {
-    $(".gif-modal").addClass("hidden");
+    $(".gif-modal").addClass("invisible");
   }
 });
 

@@ -32,27 +32,30 @@
     <p class="input-p">Search and save your favorite films and gifs at the same time.</p>
   </section>
 
-  <div class="movie-modal hidden">
-    <h4>Saved Movies</h4>
+  <div class="movie-modal d-flex flex-column align-items-center justify-content-start invisible">
+    <h4>SAVED MOVIES</h4>
+    <!-- <div class="movie-modal-info d-flex flex-row align-items-center justify-content-between">
+      <div class="modal-info-text"></div>
+      <div class="modal-poster-container"></div>
+    </div> -->
   </div>
 
-  <div class="gif-modal hidden">
+  <div class="gif-modal d-flex flex-column align-items-center justify-content-start invisible">
     <h4>Saved Gifs</h4>
   </div>
 
 
   <main>
-    <div class="container movie-info d-flex flex-row align-items-center justify-content-between invisible">
-      <div class="movie-info-container">
+    <div class="movie-info-container">
+      <div class="container movie-info d-flex flex-row align-items-center justify-content-between invisible">
         <div class="info-text"></div>
-        </div>
-        <div class="poster-container">
-
-        </div>
+        <div class="poster-container"></div>
       </div>
-    <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap invisible">
+      <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap invisible">
+      </div>
     </div>
   </main>
+
   <footer>
     <button class="btn btn-danger saved-movies" id="saved-movies-btn">MOVIES</button>
     <button class="btn btn-danger saved-gifs" id="saved-gifs-btn">GIFS</button>
