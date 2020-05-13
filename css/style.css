@@ -1,21 +1,34 @@
+body {
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url("../images/cinemagraph_gif.gif");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
 p {
   font-size: .5em;
   margin-bottom: 0;
 }
 
 header > p {
-  width: 57%;
-  font-size: .8rem;
+  width: 52%;
+  font-size: 1.2rem;
+  font-family: 'Amatic SC', cursive;
+  color: whitesmoke;
 }
 
 header > h1 {
   color: rgb(216, 0, 0);
+  font-family: 'Pattaya', sans-serif;
+  margin-left: 10px;
 }
 
 .movie-info {
   height: 25%;
   padding-right: 15px;
   padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0.562);
 }
 
 .gif-box {
@@ -25,19 +38,44 @@ header > h1 {
 
 .input-p {
   width: 100%;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   text-align: center;
   margin-bottom: .5rem;
+  color: white;
+  font-family: 'Amatic SC', cursive;
 }
 
 #search-button {
   background-color: rgb(194, 0, 0);
+  font-family: 'Amatic SC', cursive;
 }
 
 #save-movie-btn {
-  font-size: .5rem;
+  font-size: .7rem;
   background-color: rgb(194, 0, 0);
+  font-family: 'Amatic SC', cursive;
   width: 100%;
+}
+
+footer {
+  margin-top: 30%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#saved-movies-btn {
+  width: 25%;
+  font-size: 1.2rem;
+  font-family: 'Amatic SC', cursive;
+  background-color: rgb(194, 0, 0);
+}
+#saved-gifs-btn {
+  width: 25%;
+  font-size: 1.2rem;
+  font-family: 'Amatic SC', cursive;
+  background-color: rgb(194, 0, 0);
 }
 
 .poster-img {
@@ -66,8 +104,23 @@ header > h1 {
   width: 100%;
   height: 66%;
   text-align: center;
+  font-family: 'Amatic SC', cursive;
 }
 .movie-modal > h4 {
+  font-size: 1rem;
+}
+.gif-modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(143, 0, 0);
+  color: antiquewhite;
+  width: 100%;
+  height: 66%;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+}
+.gif-modal > h4 {
   font-size: 1rem;
 }
 

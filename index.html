@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Marcellus+SC&family=Pattaya&family=Six+Caps&display=swap&family=Amatic+SC:wght@700&family=News+Cycle&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -35,35 +36,43 @@
     <h4>Saved Movies</h4>
   </div>
 
+  <div class="gif-modal hidden">
+    <h4>Saved Gifs</h4>
+  </div>
+
 
   <main>
-    <div class="container movie-info d-flex flex-row align-items-center justify-content-between border border-light">
+    <div class="container movie-info d-flex flex-row align-items-center justify-content-between">
       <div class="movie-info-container">
-        <p class="info-text"></p>
+        <div class="info-text"></div>
         </div>
         <div class="poster-container">
 
         </div>
       </div>
-    <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap border border-light">
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
-      <div class="gif-box border border-secondary"></div>
+    <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap">
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
+      <div class="gif-box"></div>
     </div>
   </main>
+  <footer>
+    <button class="btn btn-danger saved-movies" id="saved-movies-btn">MOVIES</button>
+    <button class="btn btn-danger saved-gifs" id="saved-gifs-btn">GIFS</button>
+  </footer>
 
 
 

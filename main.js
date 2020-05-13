@@ -1,17 +1,24 @@
-// var searchInput = document.querySelector(".search-input");
-// var searchButton = document.querySelector(".search-button");
-// var searchValue = "";
-// searchButton.addEventListener("click", function() {
-//   searchValue = searchInput.value;
-//   app.searchMovie(searchValue)
-// });
-
-var moveInfoEl = document.querySelector(".movie-info");
+var moveInfoEl = $(".movie-info");
 var movieInfo = new MovieInfo(moveInfoEl);
 
-// var gifsEl = document.querySelector(".gif-container");
-// var gifsInfo = new GifCreator(gifsEl);
+var gifEl = $(".gif-container");
+var gifs = new GifCreator(gifEl);
 
+$("#saved-movies-btn").on("click", function() {
+  if ($(".movie-modal").hasClass("hidden")) {
+    $(".movie-modal").removeClass("hidden");
+  } else {
+    $(".movie-modal").addClass("hidden");
+  }
+});
 
-var app = new App(movieInfo);
+$("#saved-gifs-btn").on("click", function() {
+  if ($(".gif-modal").hasClass("hidden")) {
+    $(".gif-modal").removeClass("hidden");
+  } else {
+    $(".gif-modal").addClass("hidden");
+  }
+});
+
+var app = new App(movieInfo, gifs);
 app.start();

@@ -1,9 +1,10 @@
 
 class App {
-  constructor(movieInfo) {
+  constructor(movieInfo, gifInfo) {
   this.savedMovies = [];
+  this.savedGifs = [];
   this.movieInfo = movieInfo;
-  this.gifInfo = null;
+  this.gifInfo = gifInfo;
   this.searchForm = $('#search-form');
   this.searchInput = $(".search-input");
   this.applyEventHandlers = this.applyEventHandlers.bind(this);
@@ -13,6 +14,7 @@ class App {
   this.handleGifSearchError = this.handleGifSearchError.bind(this);
   this.createSaveMovieBtn = this.createSaveMovieBtn.bind(this);
   this.removeMovieSaveBtn = this.removeMovieSaveBtn.bind(this);
+  this.handleSaveMovieClick = this.handleSaveMovieClick.bind(this);
   }
 
 
@@ -60,6 +62,8 @@ class App {
   }
   handleGifSearchSuccess(data) {
     console.log('gif data:', data);
+    console.log(this.gifCreator);
+    this.gifInfo.searchedGif(data);
   }
   handleGifSearchError(err) {
     console.error(err);
@@ -70,7 +74,12 @@ class App {
     saveMovieBtn.className = "btn btn-danger";
     saveMovieBtn.setAttribute("id", "save-movie-btn");
     saveMovieBtn.textContent = "SAVE";
+    saveMovieBtn.addEventListener("click", this.handleSaveMovieClick());
     $(".poster-container").append(saveMovieBtn);
+
+  }
+
+  handleSaveMovieClick() {
 
   }
 
