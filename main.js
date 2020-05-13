@@ -20,5 +20,7 @@ $("#saved-gifs-btn").on("click", function() {
   }
 });
 
+var searchedNumber = 0;
+
 var app = new App(movieInfo, gifs);
 app.start();
