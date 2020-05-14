@@ -17,6 +17,9 @@ class App {
   this.handleSaveMovieClick = this.handleSaveMovieClick.bind(this);
   this.movieInfoToggle = this.movieInfoToggle.bind(this);
   this.gifInfoToggle = this.gifInfoToggle.bind(this);
+  this.savedMovieConfirmation = this.savedMovieConfirmation.bind(this);
+  this.handleSaveGifClick = this.handleSaveGifClick.bind(this);
+  this.saveGifConfirmation = this.saveGifConfirmation.bind(this);
   }
 
 
@@ -88,6 +91,21 @@ class App {
     console.log('saveMovieClick this.movieInfo:', this.movieInfo);
     this.savedMovies.push(this.movieInfo.data);
     this.movieInfo.saveMovie(this.savedMovies);
+    this.savedMovieConfirmation();
+  }
+  savedMovieConfirmation() {
+    var movieSavedModal = $(".movie-saved-alert");
+    movieSavedModal.removeClass("invisible");
+  }
+
+  saveGifConfirmation() {
+    var gifSavedModal = $(".gif-modal");
+    $(gifSavedModal).removeClass("invisible");
+  }
+  handleSaveGifClick() {
+    this.savedGifs.push(this.gifInfo.data);
+    this.gifsInfo.saveGif(this.savedGifs);
+    this.savedGifConfirmation
   }
 
   removeMovieSaveBtn() {

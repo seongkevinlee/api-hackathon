@@ -1,22 +1,6 @@
 class GifCreator {
   constructor(gifs) {
     this.gifs = gifs;
-    // this.gif1 = null;
-    // this.gif2 = null;
-    // this.gif3 = null;
-    // this.gif4 = null;
-    // this.gif5 = null;
-    // this.gif6 = null;
-    // this.gif7 = null;
-    // this.gif8 = null;
-    // this.gif9 = null;
-    // this.gif10 = null;
-    // this.gif11 = null;
-    // this.gif12 = null;
-    // this.gif13 = null;
-    // this.gif14 = null;
-    // this.gif15 = null;
-    // this.gif16 = null;
   }
 
   searchedGif(movieTitles) {
@@ -36,8 +20,24 @@ class GifCreator {
     var gifImg = document.createElement("img");
     gifImg.className = "gif-img";
     gifImg.setAttribute("src", url);
+    $(gifImg).on("click", function() {
+      console.log("this.app.saveGifConfirmation:");
+      this.app.saveGifConfirmation();// will start the confirmation modal
+    });
     $(".gif-container").append(gifImg);
-    })
+    });
+  }
 
+  saveGif(urls) {
+    var gifModal = $(".gif-modal");
+    var gifImages = urls.forEach(function (url) {
+      var gifImg = document.createElement("img");
+      gifImg.className = "gif-img";
+      gifImg.setAttribute("src", url);
+      $(gifImg).on("click", function () {
+        alert(url); // will start the confirmation modal
+      })
+      $(gifModal).append(gifImg);
+    })
   }
 }
