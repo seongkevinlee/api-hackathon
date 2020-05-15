@@ -15,11 +15,6 @@ class MovieInfo {
   }
 
   searchedMovie(movie) {
-    console.log('movieInfo:', movie);
-    // var movieInfoBody = $(".info-text");
-    // movieInfoBody.detach();
-    // var moviePosterBody = $(".poster-container");
-    // moviePosterBody.detach();
     this.title = "Title: " + movie.Title;
     this.year = "Year: " + movie.Year;
     this.rated = "Rated: " + movie.Rated;
@@ -38,7 +33,6 @@ class MovieInfo {
     this.data = data;
     var movieInfoBody = $(".info-text");
     var posterContainer = $(".poster-container");
-    console.log('movieInfoBody:', movieInfoBody);
     movieInfoBody.empty();
     posterContainer.empty();
 
@@ -53,9 +47,12 @@ class MovieInfo {
     var plotText = document.createElement("p");
     var imdbRatingText = document.createElement("p");
     var posterImg = document.createElement("img");
+    var posterImg2 = document.createElement("img");
 
     posterImg.setAttribute("src", this.poster);
     posterImg.className = "poster-img";
+    posterImg2.setAttribute("src", this.poster);
+    posterImg2.className = "poster-img2";
 
     titleText.textContent = this.title;
     yearText.textContent = this.year;
@@ -78,10 +75,12 @@ class MovieInfo {
       awardsText,
       directorText,
       plotText,
-      imdbRatingText,
-      )
+      imdbRatingText
+      );
 
     posterContainer.append(posterImg);
+
+    $(".movie-saved-alert").append(posterImg2);
   }
 
   saveMovie(movieInfo) {

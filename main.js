@@ -20,6 +20,21 @@ $("#saved-gifs-btn").on("click", function() {
   }
 });
 
+$(".saved-movie-confirm").on("click", function() {
+  $(".movie-saved-alert").addClass("invisible");
+  $(".posterImg2").remove();
+});
+
+$(".saved-gif-cancel").on("click", function() {
+  $(".gif-saved-alert").addClass("invisible");
+  $(".prompt-gif").remove();
+});
+
+$(".saved-gif-confirm").on("click", function() {
+  $(".gif-saved-alert").addClass("invisible");
+  app.handleSaveGifClick();
+});
+
 var searchedNumber = 0;
 
 var app = new App(movieInfo, gifs);

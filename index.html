@@ -34,31 +34,45 @@
 
   <div class="movie-modal d-flex flex-column align-items-center justify-content-start invisible">
     <h4>SAVED MOVIES</h4>
-    <!-- <div class="movie-modal-info d-flex flex-row align-items-center justify-content-between">
-      <div class="modal-info-text"></div>
+
+    <div class="movie-modal-info d-flex flex-row align-items-center justify-content-between">
+      <div class="modal-info-text d-flex flex-column align-items-start"></div>
       <div class="modal-poster-container"></div>
-    </div> -->
+    </div>
+
   </div>
 
   <div class="gif-modal d-flex flex-column align-items-center justify-content-start invisible">
     <h4>Saved Gifs</h4>
   </div>
 
+  <div class="movie-saved-alert invisible">
+    <h2>YOUR MOVIE HAS BEEN SAVED.</h2>
+    <button class="btn btn-light saved-movie-confirm">GOT IT!</button>
+    <p>Check the MOVIE section to see a list of your saved movies.</p>
+  </div>
+
+  <div class="gif-saved-alert invisible">
+    <h2>WOULD YOU LIKE TO SAVE THIS GIF?</h2>
+    <button class="btn btn-light saved-gif-confirm">SAVE</button>
+    <button class="btn btn-light saved-gif-cancel">CANCEL</button>
+    <p>Check the GIF section to see a list of your saved movies.</p>
+  </div>
 
   <main>
-    <div class="movie-info-container">
+    <div class="movie-info-container d-sm-flex align-items-sm-start">
       <div class="container movie-info d-flex flex-row align-items-center justify-content-between invisible">
-        <div class="info-text"></div>
-        <div class="poster-container"></div>
+        <div class="info-text d-flex flex-column align-items-start justify-content-start"></div>
+        <div class="poster-container d-flex flex-column justify-content-sm-center"></div>
       </div>
       <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap invisible">
       </div>
     </div>
   </main>
 
-  <footer>
-    <button class="btn btn-danger saved-movies" id="saved-movies-btn">MOVIES</button>
-    <button class="btn btn-danger saved-gifs" id="saved-gifs-btn">GIFS</button>
+  <footer class="d-flex align-items-center">
+    <button class="btn btn-danger saved-movies col-6" id="saved-movies-btn">MOVIES</button>
+    <button class="btn btn-danger saved-gifs col-6" id="saved-gifs-btn">GIFS</button>
   </footer>
 
 
