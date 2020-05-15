@@ -25,8 +25,8 @@ class App {
 
   //
   start() {
-    console.log('search');
     this.applyEventHandlers();
+    this.gifInfo.addSaveGifConfirmation(this.saveGifConfirmation);
   }
 
   applyEventHandlers() {
@@ -47,11 +47,20 @@ class App {
   }
   handleMovieSearchSuccess(data) {
     searchedNumber++;
-    console.log('Data', data);
-    this.searchGiphy(data.Title);
-    this.movieInfo.searchedMovie(data);
-    this.createSaveMovieBtn();
-    this.movieInfoToggle();
+    if(data.Title === undefined){
+      $(".movie-info").removeClass("invisible");
+      var noResultsText = "<h4 class='no-result-txt'>NO SEARCH RESULTS</h4>"
+      $(".info-text").empty();
+      $(".poster-container").empty();
+      $(".info-text").prepend(noResultsText);
+      this.searchGiphy(data.Title);
+    } else {
+      $(".no-result-text").remove();
+      this.searchGiphy(data.Title);
+      this.movieInfo.searchedMovie(data);
+      this.createSaveMovieBtn();
+      this.movieInfoToggle();
+    }
   }
   handleMovieSearchError(err) {
     console.error(err);
@@ -59,7 +68,6 @@ class App {
 
 
   searchGiphy(movieTitle) {
-    console.log(movieTitle);
     $.ajax({
       method: "GET",
       url: "https://cors-anywhere.herokuapp.com/api.giphy.com/v1/gifs/search?api_key=" + giphyKey + "&limit=16&q=" + movieTitle,
@@ -68,8 +76,6 @@ class App {
     })
   }
   handleGifSearchSuccess(data) {
-    console.log('gif data:', data);
-    console.log(this.gifCreator);
     this.gifInfo.searchedGif(data);
     this.gifInfoToggle();
   }
@@ -84,11 +90,9 @@ class App {
     saveMovieBtn.textContent = "SAVE";
     saveMovieBtn.addEventListener("click", this.handleSaveMovieClick);
     $(".poster-container").append(saveMovieBtn);
-
   }
 
   handleSaveMovieClick() {
-    console.log('saveMovieClick this.movieInfo:', this.movieInfo);
     this.savedMovies.push(this.movieInfo.data);
     this.movieInfo.saveMovie(this.savedMovies);
     this.savedMovieConfirmation();
@@ -98,22 +102,24 @@ class App {
     movieSavedModal.removeClass("invisible");
   }
 
-  saveGifConfirmation() {
-    var gifSavedModal = $(".gif-modal");
+  saveGifConfirmation(gifUrl) {
+    var gifSavedModal = $(".gif-saved-alert");
     $(gifSavedModal).removeClass("invisible");
+    var saveGifPromptImg = $("<img>").attr("src", gifUrl).addClass("prompt-gif");
+    $(gifSavedModal).append(saveGifPromptImg);
   }
   handleSaveGifClick() {
-    this.savedGifs.push(this.gifInfo.data);
-    this.gifsInfo.saveGif(this.savedGifs);
+    this.savedGifs.push(this.gifInfo.clickedGif);
+    this.gifInfo.saveGif(this.savedGifs);
     this.savedGifConfirmation
+    $(".prompt-gif").remove();
+
   }
 
   removeMovieSaveBtn() {
     var saveMovieBtn = $("#save-movie-btn");
     if(saveMovieBtn) {
       $(".movie-info").remove(saveMovieBtn);
-    } else {
-      console.log(saveMovieBtn);
     }
   }
 
