@@ -16,7 +16,8 @@ Try the application live at [[http://seongkevinlee.com](http://seongkevinlee.com
 * User can save a gif into gif modal
 
 ## Preview
-![demo-1](https://github.com/seongkevinlee/wicked-sales-js/blob/master/demo-1.gif?raw=true)
+![filphy-demo-1](https://github.com/seongkevinlee/api-hackathon/blob/master/filphy-demo-1.gif?raw=true)
+![filphy-demo-2](https://github.com/seongkevinlee/api-hackathon/blob/master/filphy-demo-2.gif?raw=true)
 
 ## Development
 ### System Requirements
