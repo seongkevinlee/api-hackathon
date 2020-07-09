@@ -29,4 +29,4 @@ Try the application live at [[http://seongkevinlee.com](http://seongkevinlee.com
 git clone https://github.com/seongkevinlee/api-hackathon.git
 cd api-hackathon
 ```
-2. Open index.html to the web browser to view the site.
+2. Open index.html in the web browser to view the site.
