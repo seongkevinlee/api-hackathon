@@ -80,13 +80,10 @@ class MovieInfo {
 
     posterContainer.append(posterImg);
 
-    $(".movie-saved-alert").append(posterImg2);
+    $(".movie-poster-img").append(posterImg2);
   }
 
   saveMovie(movieInfo) {
-    // var movieModalText = $(".modal-info-text");
-    // console.log('movieInfoBody:', movieModalText);
-    // var movieModalPoster = $(".modal-poster-container");
     var movieModalContainer = $(".movie-modal");
 
     var movieModalBoxes = document.createElement("div");

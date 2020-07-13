@@ -1,0 +1,281 @@
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 413px)
+  and (orientation: portrait) {
+
+  main {
+    min-height: 68%;
+  }
+
+  /* HEADER */
+  .logo {
+    font-size: 3rem;
+  }
+
+  header > p {
+    width: 55%;
+    font-size: 1.5rem;
+  }
+
+  /* SEARCH SECTION */
+  .search-input {
+    font-size: 1.5rem;
+  }
+  .input-p {
+    font-size: 1.2rem;
+  }
+  #search-button {
+    font-size: 1.2rem;
+  }
+
+  /* MOVIE SECTION */
+  .movie-info {
+    height: 23%;
+    width: 100%;
+    top: 22%;
+  }
+  .info-text {
+    font-size: 1.2rem;
+    justify-content: start!important;
+  }
+  #save-movie-btn {
+    font-size: 1.2rem;
+  }
+  .poster-container {
+    width: 27%;
+  }
+
+  /* GIF SECTION */
+  .gif-container {
+    height: 48%;
+    top: 46%;
+    left: 0;
+  }
+  .gif-img {
+    width: 50%;
+    height: 50%;
+  }
+
+  /* SAVED MOVIE MODAL */
+  .movie-modal {
+    height: 71%;
+  }
+  .modal-info-text {
+    font-size: 1.1rem;
+  }
+  #saved-movies-btn {
+    font-size: 2rem;
+  }
+
+  /* SAVED GIF MODAL */
+  .gif-modal {
+    height: 71%;
+  }
+  .saved-gif {
+    height: 41%;
+  }
+  #saved-gifs-btn {
+    font-size: 2rem;
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1023px)
+  and (orientation: portrait) {
+
+  main {
+    min-height: 70.8%;
+  }
+
+  /* HEADER */
+  .logo {
+    font-size: 5rem;
+  }
+
+  header > p {
+    width: 53%;
+    font-size: 2.5rem;
+  }
+
+  /* SEARCH SECTION */
+  .search-input {
+    font-size: 2.5rem;
+  }
+  .input-p {
+    font-size: 2.2rem;
+  }
+  #search-button {
+    font-size: 2.2rem;
+  }
+
+  /* MOVIE SECTION */
+  .movie-info {
+    height: 25.5%;
+    max-width: 100%;
+  }
+  .info-text {
+    font-size: 2.2rem;
+    width: 75%;
+  }
+  #save-movie-btn {
+    font-size: 1.8rem;
+    }
+  .poster-container {
+    width: 20%;
+  }
+
+  /* GIF SECTION */
+  .gif-container {
+    max-width: 100%;
+    top: 49%;
+  }
+  .gif-img {
+    height: 210px;
+  }
+
+  /* SAVED MOVIE MODAL */
+  .modal-info-text {
+    font-size: 2rem;
+  }
+  .movie-modal > h4 {
+    font-size: 2.5rem;
+  }
+  .movie-saved-modal {
+    height: 77%;
+  }
+  .poster-img2 {
+    width: 45%;
+  }
+  .movie-saved-alert > h2 {
+    font-size: 3rem;
+  }
+  .movie-saved-alert > p {
+    font-size: 2rem;
+  }
+  .movie-saved-alert > button {
+    font-size: 2.5rem;
+  }
+
+  /* SAVED GIF MODAL */
+  .gif-modal {
+
+  }
+  .gif-modal > h4 {
+    font-size: 2.5rem;
+  }
+  .gif-saved-alert > h2 {
+    font-size: 3rem;
+  }
+  .gif-saved-alert > p {
+    font-size: 2rem;
+  }
+  .gif-saved-alert > button {
+    font-size: 2.5rem;
+  }
+
+  /* FOOTER SECTION */
+  #saved-movies-btn, #saved-gifs-btn {
+    font-size: 2rem;
+  }
+}
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (orientation: portrait) {
+
+  main {
+    min-height: 70.8%;
+  }
+
+  /* HEADER */
+  .logo {
+    font-size: 8rem;
+  }
+
+  header > p {
+    width: 53%;
+    font-size: 2.5rem;
+  }
+
+  /* SEARCH SECTION */
+  .search-input {
+    font-size: 2.5rem;
+  }
+  .input-p {
+    font-size: 2.2rem;
+  }
+  #search-button {
+    font-size: 2.2rem;
+  }
+
+  /* MOVIE SECTION */
+  .movie-info {
+    height: 25.5%;
+    max-width: 100%;
+  }
+  .info-text {
+    font-size: 2.2rem;
+    width: 75%;
+  }
+  #save-movie-btn {
+    font-size: 1.8rem;
+    }
+  .poster-container {
+    width: 20%;
+  }
+
+  /* GIF SECTION */
+  .gif-container {
+    max-width: 100%;
+    top: 49%;
+  }
+  .gif-img {
+    height: 210px;
+  }
+
+  /* SAVED MOVIE MODAL */
+  .modal-info-text {
+    font-size: 2rem;
+  }
+  .movie-modal > h4 {
+    font-size: 2.5rem;
+  }
+  .movie-saved-modal {
+    height: 77%;
+  }
+  .poster-img2 {
+    width: 45%;
+  }
+  .movie-saved-alert > h2 {
+    font-size: 3rem;
+  }
+  .movie-saved-alert > p {
+    font-size: 2rem;
+  }
+  .movie-saved-alert > button {
+    font-size: 2.5rem;
+  }
+
+  /* SAVED GIF MODAL */
+  .gif-modal {
+
+  }
+  .gif-modal > h4 {
+    font-size: 2.5rem;
+  }
+  .gif-saved-alert > h2 {
+    font-size: 3rem;
+  }
+  .gif-saved-alert > p {
+    font-size: 2rem;
+  }
+  .gif-saved-alert > button {
+    font-size: 2.5rem;
+  }
+
+  /* FOOTER SECTION */
+  #saved-movies-btn, #saved-gifs-btn {
+    font-size: 2rem;
+  }
+}
