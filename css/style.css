@@ -5,7 +5,8 @@ html, body {
   font-family: 'Amatic SC', cursive;
 }
 main {
-  min-height: 70%;
+  min-height: 63%;
+  max-width: 100%;
 }
 body {
   margin: 0;
@@ -23,8 +24,7 @@ p {
 /* HEADER */
 header > p {
   width: 52%;
-  font-size: 1.2rem;
-
+  font-size: 3.2rem;
   color: whitesmoke;
 }
 header > h1 {
@@ -32,60 +32,66 @@ header > h1 {
   font-family: 'Pattaya', sans-serif;
   margin-left: 10px;
 }
+.logo{
+  font-size: 6.5rem;
+}
 
 /* SEARCH SECTION */
 .input-p {
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: .5rem;
   color: white;
-
 }
 #search-button {
   background-color: rgb(194, 0, 0);
-
+  font-size: 2rem;
 }
 .form-control {
-
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 
 /* MOVIE SECTION */
 .movie-info {
-  height: 24%;
+  left: 0;
+  top: 30%;
+  margin: auto;
+  width: 50%;
+  height: 63%;
   padding-right: 15px;
   padding-left: 15px;
   background-color: rgba(255, 255, 255, 0.562);
   position: fixed;
-  overflow: scroll;
+  overflow: hidden scroll;
   z-index: 0;
   border-radius: 7px;
   font-family: 'Marcellus SC';
   font-weight: 700;
 }
 .info-text {
-  width: 72%;
+  width: 100%;
   height: 100%;
+  font-size: 2.5rem;
 }
 .poster-img {
   width: 100%;
-  height: 100%;
 }
 .poster-img2 {
   width: 56%;
 }
 .poster-container {
-  width: 25%;
+  width: 66%;
 }
 .movie-info-container {
   width: 70%;
   height: 100%;
 }
 #save-movie-btn {
-  font-size: .7rem;
+  font-size: 1.5rem;
   background-color: rgb(194, 0, 0);
   width: 100%;
+  font-family: 'Amatic SC', cursive;
 }
 .no-result-txt {
   width: 130%;
@@ -95,17 +101,18 @@ header > h1 {
 /* GIF SECTION */
 .gif-container {
   width: 100%;
-  height: 45%;
+  height: 63%;
   background-color: rgba(255, 255, 255, 0.562);
   position: fixed;
-  overflow: scroll;
+  overflow: hidden scroll;
   z-index: 0;
-  top: 47%;
+  top: 30%;
+  left: 50%;
   border-radius: 7px;
 }
 .gif-img {
-  width: 50%;
-  height: 95px;
+  width: 25%;
+  height: 25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -113,15 +120,10 @@ header > h1 {
 }
 
 /* FOOTER */
-#saved-movies-btn {
-  font-size: 1.2rem;
-
+#saved-movies-btn, #saved-gifs-btn {
+  font-size: 2.2rem;
   background-color: rgb(194, 0, 0);
-}
-#saved-gifs-btn {
-  font-size: 1.2rem;
-
-  background-color: rgb(194, 0, 0);
+  bottom: 0;
 }
 
 /* SAVED MOVIES MODAL */
@@ -132,26 +134,33 @@ header > h1 {
   background-color: rgb(143, 0, 0);
   color: antiquewhite;
   width: 100%;
-  height: 66%;
-
+  height: 63%;
   z-index: 1;
   overflow: scroll;
   border-radius: 7px;
 }
 .movie-modal > h4 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .modal-info-text {
   width: 70%;
   height: 100%;
   margin-left: 3%;
+  font-family: 'Marcellus SC';
+  font-size: 2rem;
  }
 .modal-poster-container {
-  width: 27%;
+  width: 20%;
   margin-right: 3%;
 }
 .movie-modal-info {
   margin-bottom: 3%;
+  margin-top: 2%;
+  height: 59%;
+}
+.movie-poster-img {
+  width: 30%;
+  margin: auto;
 }
 .movie-saved-alert {
   position: fixed;
@@ -160,18 +169,17 @@ header > h1 {
   background-color: rgb(143, 0, 0);
   color: antiquewhite;
   text-align: center;
-
   z-index: 2;
   padding-top: 2rem;
 }
 .movie-saved-alert > button {
-  width: 25%;
-  height: 10%;
+  width: 10%;
+  height: 6%;
   border-radius: 7px;
   font-size: 1.5rem;
 }
 .movie-saved-alert > p {
-  font-size: 1rem;
+  font-size: 2rem;
   margin-top: 5px;
 }
 
@@ -181,45 +189,41 @@ header > h1 {
   background-color: rgb(143, 0, 0);
   color: antiquewhite;
   width: 100%;
-  height: 66%;
+  height: 63%;
   text-align: center;
-
   z-index: 1;
-  overflow: scroll;
+  overflow: hidden scroll;
   border-radius: 7px;
 }
 .gif-modal > h4 {
-  font-size: 1.5rem;
-  z-index: 1;
+  font-size: 2.5rem;
 }
 .gif-saved-alert {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 71%;
   background-color: rgb(143, 0, 0);
   color: antiquewhite;
   text-align: center;
-
   z-index: 2;
   padding-top: 2rem;
 }
 .gif-saved-alert > button {
-  width: 25%;
-  height: 10%;
+  width: 10%;
+  height: 8%;
   border-radius: 7px;
   font-size: 1.5rem;
 }
 .gif-saved-alert > p {
-  font-size: 1rem;
+  font-size: 2rem;
   margin-top: 5px;
 }
 .saved-gif {
-  width: 85%;
-  height: 50%;
+  width: 45%;
   margin-bottom: 5px;
 }
 .prompt-gif {
-  width: 85%;
+  width: 40%;
 }
 
 /* DISPLAY TOGGLES */

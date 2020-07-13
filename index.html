@@ -11,18 +11,19 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
   <title>Filphy</title>
 </head>
 <body>
   <header class="container d-flex flex-row align-items-center justify-content-between">
-    <h1>Filphy</h1>
+    <h1 class="logo">Filphy</h1>
     <p>LET'S GET FILPHY IN HERE</p>
   </header>
 
   <section class="container">
   <form id="search-form">
     <div class="input-group">
-      <input type="text" class="form-control search-input" placeholder="SEARCH A FILM TITLE" aria-label="Movie Title Search"
+      <input type="text" class="form-control search-input" placeholder="SEARCH A FILM/TV TITLE" aria-label="Movie Title Search"
         aria-describedby="basic-addon2">
         <div class="input-group-append">
         <button class="btn btn-danger search-button" id="search-button" type="submit">Search</button>
@@ -35,10 +36,7 @@
   <div class="movie-modal d-flex flex-column align-items-center justify-content-start invisible">
     <h4>SAVED MOVIES</h4>
 
-    <div class="movie-modal-info d-flex flex-row align-items-center justify-content-between">
-      <div class="modal-info-text d-flex flex-column align-items-start"></div>
-      <div class="modal-poster-container"></div>
-    </div>
+
 
   </div>
 
@@ -50,6 +48,7 @@
     <h2>YOUR MOVIE HAS BEEN SAVED.</h2>
     <button class="btn btn-light saved-movie-confirm">GOT IT!</button>
     <p>Check the MOVIE section to see a list of your saved movies.</p>
+    <div class="movie-poster-img"></div>
   </div>
 
   <div class="gif-saved-alert invisible">
@@ -62,7 +61,7 @@
   <main>
     <div class="movie-info-container d-sm-flex align-items-sm-start">
       <div class="container movie-info d-flex flex-row align-items-center justify-content-between invisible">
-        <div class="info-text d-flex flex-column align-items-start justify-content-start"></div>
+        <div class="info-text d-flex flex-column align-items-start justify-content-center"></div>
         <div class="poster-container d-flex flex-column justify-content-sm-center"></div>
       </div>
       <div class="container gif-container d-flex flex-row align-items-center justify-content-between flex-wrap invisible">

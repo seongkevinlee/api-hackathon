@@ -22,7 +22,7 @@ $("#saved-gifs-btn").on("click", function() {
 
 $(".saved-movie-confirm").on("click", function() {
   $(".movie-saved-alert").addClass("invisible");
-  $(".posterImg2").remove();
+  $(".movie-poster-img").empty();
 });
 
 $(".saved-gif-cancel").on("click", function() {
