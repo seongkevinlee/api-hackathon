@@ -2,7 +2,7 @@
 Front-end web application utilizing the Giphy API and Online Movie Database API.
 
 ## Live Demo
-Try the application live at [[http://seongkevinlee.com](http://seongkevinlee.com)]
+Try the application live at [[https://filphy.seongkevinlee.com/](https://filphy.seongkevinlee.com/)]
 
 ## Technologies Used
 * JavaScript (ES5, ES6)
