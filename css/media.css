@@ -58,7 +58,7 @@
 
   /* SAVED MOVIE MODAL */
   .movie-modal {
-    height: 71%;
+    height: 68%;
   }
   .modal-info-text {
     font-size: 1.1rem;
@@ -66,16 +66,46 @@
   #saved-movies-btn {
     font-size: 2rem;
   }
+  .movie-modal-info {
+  margin-bottom: 7%;
+  margin-top: 2%;
+  height: 32%;
+  }
 
   /* SAVED GIF MODAL */
   .gif-modal {
-    height: 71%;
+    height: 68%;
   }
   .saved-gif {
     height: 41%;
   }
   #saved-gifs-btn {
     font-size: 2rem;
+  }
+
+  .movie-saved-alert, .gif-saved-alert {
+    height: 68%;
+    overflow:  hidden scroll;
+
+  }
+
+  .movie-confirm-text > h2, .gif-saved-alert >h2 {
+    font-size: 1.5rem;
+  }
+  .movie-confirm-text > button{
+    width: 23%;
+    font-size: 1.2rem;
+    /* height: 10%; */
+  }
+  .movie-confirm-text > p, .gif-saved-alert > p {
+    font-size: 1.2rem;
+  }
+  .gif-saved-alert > button  {
+    width: 23%;
+    height: 12%;
+  }
+  .poster-img2 {
+    width: 100%;
   }
 }
 
@@ -277,5 +307,121 @@
   /* FOOTER SECTION */
   #saved-movies-btn, #saved-gifs-btn {
     font-size: 2rem;
+  }
+}
+
+
+@media only screen
+  and (min-device-width: 667px)
+  and (max-device-width: 768px)
+  and (orientation: landscape) {
+
+  main {
+    min-height: 46.5%;
+  }
+
+  /* HEADER */
+  .logo {
+    font-size: 3rem;
+  }
+
+  header > p {
+    width: 55%;
+    font-size: 1.5rem;
+  }
+
+  /* SEARCH SECTION */
+  .search-input {
+    font-size: 1.5rem;
+  }
+  .input-p {
+    font-size: 1.2rem;
+  }
+  #search-button {
+    font-size: 1.2rem;
+  }
+
+  /* MOVIE SECTION */
+  .movie-info {
+    height: 49%;
+    width: 50%;
+    top: 38%;
+  }
+  .info-text {
+    font-size: 1.2rem;
+    justify-content: start!important;
+  }
+  #save-movie-btn {
+    font-size: 1.2rem;
+  }
+  .poster-container {
+    width: 27%;
+  }
+
+  /* GIF SECTION */
+  .gif-container {
+    height: 49%;
+    top: 38%;
+    left: 50;
+    width: 50%;
+  }
+  .gif-img {
+    width: 50%;
+    height: 50%;
+  }
+
+  /* SAVED MOVIE MODAL */
+  .movie-modal {
+    height: 50%;
+    top: 37%;
+  }
+  .movie-modal > h4 {
+    font-size: 1.5rem;
+  }
+  .modal-info-text {
+    font-size: 1.1rem;
+  }
+  #saved-movies-btn {
+    font-size: 1.5rem;
+  }
+  .movie-modal-info {
+    margin-bottom: 16%;
+  }
+
+  /* SAVED GIF MODAL */
+  .gif-modal {
+    height: 50%;
+    top: 37%;
+  }
+  .gif-modal > h4{
+    font-size: 1.5rem;
+  }
+  .saved-gif {
+    height: 41%;
+  }
+  #saved-gifs-btn {
+    font-size: 1.5rem;
+  }
+
+  .movie-saved-alert, .gif-saved-alert {
+    height: 60%;
+    overflow:  hidden scroll;
+
+  }
+
+  .movie-confirm-text > h2, .gif-saved-alert >h2 {
+    font-size: 1.5rem;
+  }
+  .movie-confirm-text > button{
+    width: 23%;
+    font-size: 1.2rem;
+    /* height: 10%; */
+  }
+  .movie-confirm-text > p, .gif-saved-alert > p {
+    font-size: 1.2rem;
+  }
+  .gif-saved-alert > button  {
+    width: 15%;
+    height: 20%;
   }
 }
