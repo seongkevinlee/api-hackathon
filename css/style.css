@@ -100,7 +100,7 @@ header > h1 {
 
 /* GIF SECTION */
 .gif-container {
-  width: 100%;
+  width: 50%;
   height: 63%;
   background-color: rgba(255, 255, 255, 0.562);
   position: fixed;
@@ -111,12 +111,13 @@ header > h1 {
   border-radius: 7px;
 }
 .gif-img {
-  width: 25%;
-  height: 25%;
+  width: 50%;
+  height: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 /* FOOTER */
