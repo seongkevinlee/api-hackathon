@@ -47,9 +47,10 @@
 
   /* GIF SECTION */
   .gif-container {
-    height: 48%;
-    top: 46%;
+    height: 46%;
+    top: 45%;
     left: 0;
+    width: 100%;
   }
   .gif-img {
     width: 50%;
@@ -209,15 +210,15 @@
 
 @media only screen
   and (min-device-width: 1024px)
-  and (orientation: portrait) {
+  and (orientation: landscape) {
 
   main {
-    min-height: 70.8%;
+    min-height: 60.8%;
   }
 
   /* HEADER */
   .logo {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   header > p {
@@ -238,7 +239,7 @@
 
   /* MOVIE SECTION */
   .movie-info {
-    height: 25.5%;
+    height: 61.5%;
     max-width: 100%;
   }
   .info-text {
@@ -255,7 +256,8 @@
   /* GIF SECTION */
   .gif-container {
     max-width: 100%;
-    top: 49%;
+    top: 30%;
+    height: 61.5%;
   }
   .gif-img {
     height: 210px;
