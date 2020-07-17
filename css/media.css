@@ -441,3 +441,38 @@
     font-size: 1.2rem;
   }
 }
+
+@media only screen
+  and (min-device-width: 1920px)
+  and (orientation: landscape) {
+
+    main {
+      min-height: 68%;
+    }
+    .movie-modal, .gif-modal {
+      height: 74.5%;
+      top: 19%;
+    }
+    .movie-info, .gif-container {
+      height: 63.4%;
+    }
+    .poster-container {
+      width: 43%;
+    }
+    .info-text {
+      justify-content: center;
+    }
+    .modal-info-text > p {
+      font-size: 1rem;
+    }
+
+    .movie-saved-alert > p {
+      font-size: 1.5rem;
+    }
+    .movie-confirm-text > button {
+      font-size: 2rem;
+    }
+    .poster-img2 {
+      width: 70%;
+    }
+  }
