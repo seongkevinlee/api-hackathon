@@ -252,7 +252,7 @@
     max-width: 100%;
   }
   .info-text {
-    font-size: 2.2rem;
+    font-size: 1rem;
     width: 75%;
   }
   #save-movie-btn {
@@ -472,7 +472,13 @@
     .movie-confirm-text > button {
       font-size: 2rem;
     }
+    .movie-confirm-text > p {
+      font-size: 1.5rem;
+    }
     .poster-img2 {
       width: 70%;
+    }
+    .saved-gif {
+      width: 25%;
     }
   }
