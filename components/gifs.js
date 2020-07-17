@@ -36,9 +36,6 @@ class GifCreator {
       var gifImg = document.createElement("img");
       gifImg.className = "saved-gif";
       gifImg.setAttribute("src", url);
-      $(gifImg).on("click", function () {
-        alert(url);
-      })
       $(gifModal).append(gifImg);
     })
   }
