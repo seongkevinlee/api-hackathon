@@ -98,9 +98,17 @@
   .movie-confirm-text > p, .gif-saved-alert > p {
     font-size: 1.2rem;
   }
+
+  .gif-saved-alert {
+    top: 22%;
+    height: 78%;
+  }
   .gif-saved-alert > button  {
     width: 23%;
     height: 12%;
+  }
+  .prompt-gif {
+  width: 80%;
   }
   .poster-img2 {
     width: 100%;
@@ -202,6 +210,7 @@
     font-size: 2.5rem;
   }
 
+
   /* FOOTER SECTION */
   #saved-movies-btn, #saved-gifs-btn {
     font-size: 2rem;
@@ -213,7 +222,7 @@
   and (orientation: landscape) {
 
   main {
-    min-height: 60.8%;
+    min-height: 54.3%;
   }
 
   /* HEADER */
@@ -260,10 +269,14 @@
     height: 61.5%;
   }
   .gif-img {
-    height: 210px;
+    height: 30%;
   }
 
   /* SAVED MOVIE MODAL */
+  .movie-modal {
+    height: 62%;
+    top: 29%;
+  }
   .modal-info-text {
     font-size: 2rem;
   }
@@ -288,19 +301,20 @@
 
   /* SAVED GIF MODAL */
   .gif-modal {
-
+    height: 62%;
+    top: 29%;
   }
   .gif-modal > h4 {
     font-size: 2.5rem;
   }
   .gif-saved-alert > h2 {
-    font-size: 3rem;
-  }
-  .gif-saved-alert > p {
     font-size: 2rem;
   }
+  .gif-saved-alert > p {
+    font-size: 1.7rem;
+  }
   .gif-saved-alert > button {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 
   /* FOOTER SECTION */
@@ -403,11 +417,13 @@
   }
 
   .movie-saved-alert, .gif-saved-alert {
-    height: 60%;
+    height: 68%;
+    top: 32%;
     overflow:  hidden scroll;
-
   }
-
+  .prompt-gif {
+    width: 50%;
+  }
   .movie-confirm-text > h2, .gif-saved-alert >h2 {
     font-size: 1.5rem;
   }
@@ -422,5 +438,6 @@
   .gif-saved-alert > button  {
     width: 15%;
     height: 20%;
+    font-size: 1.2rem;
   }
 }

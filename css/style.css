@@ -172,6 +172,7 @@ header > h1 {
   text-align: center;
   z-index: 2;
   padding-top: 2rem;
+  overflow: hidden scroll;
 }
 .movie-saved-alert > button {
   width: 10%;
@@ -208,6 +209,7 @@ header > h1 {
   text-align: center;
   z-index: 2;
   padding-top: 2rem;
+  overflow: hidden scroll;
 }
 .gif-saved-alert > button {
   width: 10%;
