@@ -50,8 +50,10 @@ class MovieInfo {
     var posterImg2 = document.createElement("img");
 
     posterImg.setAttribute("src", this.poster);
+    posterImg.setAttribute("alt", this.title);
     posterImg.className = "poster-img";
     posterImg2.setAttribute("src", this.poster);
+    posterImg2.setAttribute("alt", this.title);
     posterImg2.className = "poster-img2";
 
     titleText.textContent = this.title;
