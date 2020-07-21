@@ -5,6 +5,9 @@ var gifEl = $(".gif-container");
 var gifs = new GifCreator(gifEl);
 
 $("#saved-movies-btn").on("click", function() {
+  if ($(".gif-modal:not(.invisible)")) {
+    $(".gif-modal").addClass("invisible");
+  }
   if ($(".movie-modal").hasClass("invisible")) {
     $(".movie-modal").removeClass("invisible");
   } else {
@@ -13,6 +16,9 @@ $("#saved-movies-btn").on("click", function() {
 });
 
 $("#saved-gifs-btn").on("click", function() {
+  if($(".movie-modal:not(.invisible)")) {
+    $(".movie-modal").addClass("invisible")
+  }
   if ($(".gif-modal").hasClass("invisible")) {
     $(".gif-modal").removeClass("invisible");
   } else {
