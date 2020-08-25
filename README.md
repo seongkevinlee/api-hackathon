@@ -1,4 +1,4 @@
-# api-hackathon
+# Filphy
 Front-end web application utilizing the Giphy API and Online Movie Database API.
 
 ## Live Demo
