@@ -41,6 +41,13 @@ class App {
     $.ajax({
       method: "GET",
       url: "http://www.omdbapi.com/?apikey=" + omdbKey + "&t=" + movieTitle,
+      cache: false,
+      beforeSend: function () {
+        $("#loading-gif").show();
+      },
+      complete: function () {
+        $("#loading-gif").hide();
+      },
       success: this.handleMovieSearchSuccess,
       error: this.handleMovieSearchError
     })
@@ -71,6 +78,13 @@ class App {
     $.ajax({
       method: "GET",
       url: "https://cors-anywhere.herokuapp.com/api.giphy.com/v1/gifs/search?api_key=" + giphyKey + "&limit=16&q=" + movieTitle,
+      cache: false,
+      beforeSend: function(){
+        $("#loading-gif").show();
+      },
+      complete: function() {
+        $("#loading-gif").hide();
+      },
       success: this.handleGifSearchSuccess,
       error: this.handleGifSearchError
     })
