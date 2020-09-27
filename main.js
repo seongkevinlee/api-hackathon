@@ -38,8 +38,13 @@ $(".saved-gif-cancel").on("click", function() {
 
 $(".saved-gif-confirm").on("click", function() {
   $(".gif-saved-alert").addClass("invisible");
+  $(".gif-saved-confirm").removeClass("invisible")
   app.handleSaveGifClick();
 });
+
+$(".saved-gif-confirm-btn").on("click", function() {
+  $(".gif-saved-confirm").addClass("invisible");
+})
 
 var searchedNumber = 0;
 
