@@ -121,7 +121,7 @@
   and (orientation: portrait) {
 
   main {
-    min-height: 70.8%;
+    min-height: 71%;
   }
 
   /* HEADER */
@@ -197,10 +197,16 @@
   .movie-saved-alert > button {
     font-size: 2.5rem;
   }
+  .saved-movie-confirm {
+    font-size: 2.5rem;
+  }
+  .movie-confirm-text > p {
+    font-size: 2rem;
+  }
 
   /* SAVED GIF MODAL */
-  .gif-modal {
-
+  .gif-saved-alert {
+    top: 23%;
   }
   .gif-modal > h4 {
     font-size: 2.5rem;
@@ -212,7 +218,18 @@
     font-size: 2rem;
   }
   .gif-saved-alert > button {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 15%;
+  }
+  .prompt-gif {
+    width: 90%;
+  }
+  .gif-saved-confirm {
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    z-index: 50;
+    background-color: rgb(216, 0, 0);
   }
 
 
