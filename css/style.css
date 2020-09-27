@@ -238,6 +238,14 @@ header > h1 {
 .prompt-gif {
   width: 40%;
 }
+.gif-saved-confirm {
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  z-index: 50;
+  background-color: rgb(216, 0, 0);
+  color: white;
+}
 
 /* DISPLAY TOGGLES */
 .invisible {
