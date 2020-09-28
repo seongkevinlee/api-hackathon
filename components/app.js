@@ -114,6 +114,7 @@ class App {
   savedMovieConfirmation() {
     var movieSavedModal = $(".movie-saved-alert");
     movieSavedModal.removeClass("invisible");
+    $(".no-movies-msg").addClass("invisible")
   }
 
   saveGifConfirmation(gifUrl) {
@@ -127,6 +128,7 @@ class App {
     this.gifInfo.saveGif(this.savedGifs);
     this.savedGifConfirmation
     $(".prompt-gif").remove();
+    $(".no-gifs-msg").addClass("invisible")
 
   }
 
