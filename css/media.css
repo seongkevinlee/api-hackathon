@@ -235,6 +235,7 @@
 
 @media only screen
   and (min-device-width: 1024px)
+  and (max-device-width: px)
   and (orientation: landscape) {
 
   main {
@@ -463,7 +464,7 @@
   and (orientation: landscape) {
 
     main {
-      min-height: 72%;
+      min-height: 68%;
     }
     .movie-modal, .gif-modal {
       height: 72%;
