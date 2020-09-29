@@ -518,6 +518,9 @@
     .modal-info-text > p {
       font-size: 1.5rem;
     }
+    .modal-poster-container {
+      width: 15%;
+    }
 
     .movie-saved-alert > p {
       font-size: 1.5rem;

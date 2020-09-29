@@ -89,7 +89,7 @@ class MovieInfo {
     var movieModalContainer = $(".movie-modal");
 
     var movieModalBoxes = document.createElement("div");
-    movieModalBoxes.className = "movie-modal-info d-flex flex-row align-items-center justify-content-between";
+    movieModalBoxes.className = "movie-modal-info d-flex flex-row align-items-start justify-content-between";
 
     var savedModalMovie = document.createElement("div");
     savedModalMovie.className = "modal-info-text";
