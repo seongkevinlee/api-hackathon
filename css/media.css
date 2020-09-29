@@ -176,6 +176,9 @@
   }
 
   /* SAVED MOVIE MODAL */
+  .movie-modal {
+    height: 71%;
+  }
   .modal-info-text {
     font-size: 2rem;
   }
@@ -186,7 +189,7 @@
     height: 77%;
   }
   .poster-img2 {
-    width: 45%;
+    width: 100%;
   }
   .movie-saved-alert > h2 {
     font-size: 3rem;
@@ -205,6 +208,9 @@
   }
 
   /* SAVED GIF MODAL */
+  .gif-modal {
+    height: 71%;
+  }
   .gif-saved-alert {
     top: 23%;
   }
@@ -291,7 +297,7 @@
 
   /* SAVED MOVIE MODAL */
   .movie-modal {
-    height: 57%;
+    height: 63%;
     top: 29%;
   }
   .modal-info-text {
@@ -306,19 +312,39 @@
   .poster-img2 {
     width: 45%;
   }
-  .movie-saved-alert > h2 {
+  .movie-confirm-text > h2, .gif-saved-alert > h2 {
     font-size: 3rem;
   }
-  .movie-saved-alert > p {
+  .movie-confirm-text > p {
+    font-size: 2.5rem;
+  }
+  .movie-saved-alert, .gif-saved-alert {
+    top: 30%;
+  }
+  .movie-confirm-text > button {
     font-size: 2rem;
   }
-  .movie-saved-alert > button {
-    font-size: 2.5rem;
+  .movie-poster-img {
+    width: 45%;
+  }
+
+  .gif-saved-confirm {
+    top: 30%;
+  }
+  .saved-gif-confirm, .saved-gif-cancel {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .gif-confirm-text > h2 {
+    font-size: 3rem;
+  }
+  .gif-confirm-text > button, .gif-confirm-text > p {
+    font-size: 2rem;
   }
 
   /* SAVED GIF MODAL */
   .gif-modal {
-    height: 62%;
+    height: 63%;
     top: 29%;
   }
   .gif-modal > h4 {
