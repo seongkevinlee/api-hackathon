@@ -38,6 +38,7 @@ class GifCreator {
       gifImg.setAttribute("src", url);
       $(gifModal).append(gifImg);
     })
+
   }
 
   addSaveGifConfirmation(saveGifConfirmation) {

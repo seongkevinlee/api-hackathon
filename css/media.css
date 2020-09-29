@@ -467,11 +467,18 @@
       min-height: 68%;
     }
     .movie-modal, .gif-modal {
-      height: 72%;
-      top: 22%;
+      height: 70%;
+      top: 24%;
     }
     .movie-info, .gif-container {
       height: 63.4%;
+    }
+    .movie-modal > h4, .gif-modal > h4 {
+      font-size: 4rem;
+      font-weight: 800;
+    }
+    .no-movies-msg, .no-gifs-msg {
+      font-size: 3rem;
     }
     .poster-container {
       width: 43%;
@@ -500,5 +507,28 @@
     }
     .saved-gif {
       width: 25%;
+    }
+
+    .gif-saved-alert {
+      height: 68%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .gif-saved-alert > h2 {
+      font-size: 3rem;
+    }
+    .prompt-gif {
+      width: 35%;
+    }
+    .saved-gif-confirm, .saved-gif-cancel {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .gif-confirm-text > h2 {
+      font-size: 3rem;
+    }
+    .gif-confirm-text > p, .saved-gif-confirm-btn {
+      font-size: 2.5rem;
     }
   }

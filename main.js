@@ -4,6 +4,15 @@ var movieInfo = new MovieInfo(moveInfoEl);
 var gifEl = $(".gif-container");
 var gifs = new GifCreator(gifEl);
 
+$("#search-button").on("click", function() {
+  if ($(".gif-modal:not(.invisible)")) {
+    $(".gif-modal").addClass("invisible");
+  }
+  if ($(".movie-modal:not(.invisible)")) {
+    $(".movie-modal").removeClass("invisible");
+  }
+})
+
 $("#saved-movies-btn").on("click", function() {
   if ($(".gif-modal:not(.invisible)")) {
     $(".gif-modal").addClass("invisible");
