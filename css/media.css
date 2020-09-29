@@ -230,6 +230,10 @@
   .prompt-gif {
     width: 90%;
   }
+  .saved-gif-confirm, .saved-gif-cancel {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
 
 
