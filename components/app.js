@@ -43,6 +43,9 @@ class App {
       url: "http://www.omdbapi.com/?apikey=" + omdbKey + "&t=" + movieTitle,
       cache: false,
       beforeSend: function () {
+        if ($(".movie-modal:not(.invisible)")) {
+          $(".movie-modal").addClass("invisible");
+        }
         $("#loading-gif").show();
       },
       complete: function () {
@@ -77,9 +80,12 @@ class App {
   searchGiphy(movieTitle) {
     $.ajax({
       method: "GET",
-      url: "https://cors-anywhere.herokuapp.com/api.giphy.com/v1/gifs/search?api_key=" + giphyKey + "&limit=16&q=" + movieTitle,
+      url: "https://api.giphy.com/v1/gifs/search?api_key=" + giphyKey + "&limit=16&q=" + movieTitle,
       cache: false,
       beforeSend: function(){
+        if ($(".gif-modal:not(.invisible)")) {
+          $(".gif-modal").addClass("invisible");
+        }
         $("#loading-gif").show();
       },
       complete: function() {
