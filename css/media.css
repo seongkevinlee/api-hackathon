@@ -623,13 +623,16 @@ and (max-device-width: 1300px) {
     }
 
     .gif-saved-alert {
-      height: 68%;
+      height: 72%;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .gif-saved-alert > h2 {
       font-size: 3rem;
+    }
+    .gif-saved-confirm {
+      height: 72%;
     }
     .prompt-gif {
       width: 35%;
