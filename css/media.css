@@ -574,11 +574,11 @@ and (max-device-width: 1300px) {
   and (orientation: landscape) {
 
     main {
-      min-height: 68%;
+      min-height: 64.4%;
     }
     .movie-modal, .gif-modal {
-      height: 70%;
-      top: 24%;
+      height: 66.4%;
+      top: 27%;
     }
     .movie-info, .gif-container {
       height: 63.4%;
@@ -616,7 +616,7 @@ and (max-device-width: 1300px) {
       font-size: 1.5rem;
     }
     .poster-img2 {
-      width: 70%;
+      width: 90%;
     }
     .saved-gif {
       width: 25%;
