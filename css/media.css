@@ -244,8 +244,88 @@
 }
 
 @media only screen
+  and (min-device-width: 1366px)
+  and (max-device-width: 1400px) {
+
+  main {
+    min-height: 55%;
+  }
+
+  .movie-info, .gif-container {
+    top: 34%;
+    height: 57%;
+  }
+
+  .gif-saved-alert {
+    height: 83%;
+    top: 34%;
+  }
+
+  .saved-gif-confirm, .saved-gif-cancel {
+    font-size: 1.75rem;
+  }
+
+  .movie-modal, .gif-modal {
+    top: 34%;
+    height: 57.5%;
+  }
+
+  .movie-saved-alert, .gif-saved-confirm {
+    top: 34%;
+  }
+
+  .movie-confirm-text > h2, .movie-confirm-text > button, .movie-confirm-text > p {
+    font-size: 3rem;
+  }
+
+}
+
+@media only screen
+and (min-device-width: 1280px)
+and (max-device-width: 1300px) {
+
+    main {
+    min-height: 52.5%;
+  }
+
+  .movie-info, .gif-container {
+    top: 36%;
+    height: 55%;
+  }
+
+  .gif-saved-alert {
+    height: 83%;
+    top: 36%;
+  }
+
+  .saved-gif-confirm, .saved-gif-cancel {
+    font-size: 1.75rem;
+  }
+
+  .movie-modal, .gif-modal {
+    top: 36%;
+    height: 55.5%;
+  }
+
+  .movie-saved-alert, .gif-saved-confirm {
+    top: 36%;
+  }
+
+  .movie-confirm-text > h2, .movie-confirm-text > button, .movie-confirm-text > p {
+    font-size: 2rem;
+  }
+  .gif-confirm-text > h2, .gif-confirm-text > button, .gif-confirm-text > p {
+    font-size: 2rem;
+  }
+
+  .poster-img2 {
+    width: 72%;
+  }
+}
+
+@media only screen
   and (min-device-width: 1024px)
-  and (max-device-width: 1365px)
+  and (max-device-width: 1100px)
   and (orientation: landscape) {
 
   main {
