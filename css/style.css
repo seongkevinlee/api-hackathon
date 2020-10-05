@@ -130,6 +130,10 @@ header > h1 {
   cursor: pointer;
 }
 
+.prompt-gif {
+  margin-top: 1rem;
+}
+
 /* FOOTER */
 #saved-movies-btn, #saved-gifs-btn {
   font-size: 2.2rem;
