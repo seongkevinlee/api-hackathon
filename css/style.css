@@ -79,6 +79,10 @@ header > h1 {
   font-family: 'Marcellus SC';
   font-weight: 700;
 }
+.movie-info::-webkit-scrollbar {
+  display: none;
+}
+
 .info-text {
   width: 100%;
   height: 100%;
@@ -120,6 +124,10 @@ header > h1 {
   left: 50%;
   border-radius: 7px;
 }
+.gif-container::-webkit-scrollbar {
+  display: none;
+}
+
 .gif-img {
   width: 50%;
   height: 50%;
@@ -155,6 +163,9 @@ header > h1 {
   overflow: hidden scroll;
   border-radius: 7px;
 }
+.movie-modal::-webkit-scrollbar {
+  display: none;
+}
 .movie-modal > h4 {
   font-size: 2.5rem;
 }
@@ -189,6 +200,9 @@ header > h1 {
   padding-top: 2rem;
   overflow: hidden scroll;
 }
+.movie-saved-alert::-webkit-scrollbar {
+  display: none;
+}
 .movie-saved-alert > button {
   width: 10%;
   height: 6%;
@@ -216,6 +230,9 @@ header > h1 {
   overflow: hidden scroll;
   border-radius: 7px;
 }
+.gif-modal::-webkit-scrollbar {
+  display: none;
+}
 .gif-modal > h4 {
   font-size: 2.5rem;
 }
@@ -229,6 +246,9 @@ header > h1 {
   z-index: 2;
   padding-top: 2rem;
   overflow: hidden scroll;
+}
+.gif-saved-alert::-webkit-scrollbar {
+  display: none;
 }
 .gif-saved-alert > button {
   width: 10%;
@@ -260,6 +280,9 @@ header > h1 {
   align-items: center;
   text-align: center;
   height: 70%;
+}
+.gif-saved-confirm::-webkit-scrollbar {
+  display: none;
 }
 .gif-confirm-text {
   margin-top: 2rem;
